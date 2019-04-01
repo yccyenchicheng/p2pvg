@@ -3,6 +3,7 @@
 
 ![teaser](imgs/teaser.png)
 ![](imgs/teaser-ret/mnist.gif) ![](imgs/teaser-ret/wm.gif) ![](imgs/teaser-ret/h36m-resize.gif)
+
 **Point-to-Point (P2P) Video Generation.** Given a pair of (orange) start- and (red) end-frames in the video and 3D
 skeleton domains, our method generates videos with smooth transitional frames of various lengths. The superb controllability
 of p2p generation naturally facilitates the modern video editing process.
@@ -24,13 +25,13 @@ posing CPC loss on pψ without deteriorating the reconstruction objective of pos
 
 Results
 ---
-**Generation with various length.**
+### **Generation with various length.**
 ![dylen](imgs/results/dynlen.png)
 
-**Multiple control points generation.**
+### **Multiple control points generation.**
 ![mulcp](imgs/results/mulcpgen.png)
 
-**Loop generation.**
+### **Loop generation.**
 ![loop](imgs/results/loopgen.png)
 
 Usage
