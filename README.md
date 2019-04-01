@@ -4,7 +4,8 @@
 ![teaser](imgs/teaser.png)
 <!--- (![](imgs/teaser-ret/mnist.gif) ![](imgs/teaser-ret/wm.gif) ![](imgs/teaser-ret/h36m-resize.gif) -->
 
-<p style="text-align:center;">
+<!---<p style="text-align:center;"> -->
+<p align="center">
 <img src="imgs/teaser-ret/mnist.gif" height="68" width="204">
 <img src="imgs/teaser-ret/wm.gif" height="68" width="204">
 <img src="imgs/teaser-ret/h36m.gif" height="68" width="204">
