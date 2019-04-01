@@ -1,5 +1,5 @@
 # Point-to-Point Video Generation
-[project page](https://www.google.com) | [paper](https://www.google.com) | [video](https://drive.google.com/file/d/1AV7E1d4QZg--3yxAYbyA1jOp98qIJUIB/view?usp=sharing)
+[project page](https://zswang666.github.io/P2PVG-Project-Page/?fbclid=IwAR3WPMFrhg1EqDCoN33dc8G5VgYuU7Zx4bxb-iMY6wiRN5e6MHZ7clKGTdo) | [paper](https://zswang666.github.io/P2PVG-Project-Page/?fbclid=IwAR3WPMFrhg1EqDCoN33dc8G5VgYuU7Zx4bxb-iMY6wiRN5e6MHZ7clKGTdo) | [video](https://drive.google.com/file/d/1AV7E1d4QZg--3yxAYbyA1jOp98qIJUIB/view?usp=sharing)
 
 ![teaser](imgs/teaser.png)
 <!--- (![](imgs/teaser-ret/mnist.gif) ![](imgs/teaser-ret/wm.gif) ![](imgs/teaser-ret/h36m-resize.gif) -->
