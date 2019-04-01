@@ -2,7 +2,13 @@
 [project page](https://www.google.com) | [paper](https://www.google.com) | [video](https://drive.google.com/file/d/1AV7E1d4QZg--3yxAYbyA1jOp98qIJUIB/view?usp=sharing)
 
 ![teaser](imgs/teaser.png)
-![](imgs/teaser-ret/mnist.gif) ![](imgs/teaser-ret/wm.gif) ![](imgs/teaser-ret/h36m-resize.gif)
+<!--- (![](imgs/teaser-ret/mnist.gif) ![](imgs/teaser-ret/wm.gif) ![](imgs/teaser-ret/h36m-resize.gif) -->
+
+<p style="text-align:center;">
+<img src="imgs/teaser-ret/mnist.gif" height="64" width="192">
+<img src="imgs/teaser-ret/wm.gif" height="64" width="192">
+<img src="imgs/teaser-ret/h36m.gif" height="64" width="192">
+</p>
 
 **Point-to-Point (P2P) Video Generation.** Given a pair of (orange) start- and (red) end-frames in the video and 3D
 skeleton domains, our method generates videos with smooth transitional frames of various lengths. The superb controllability
