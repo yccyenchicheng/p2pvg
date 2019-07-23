@@ -1,6 +1,12 @@
 # Point-to-Point Video Generation
 [project page](https://zswang666.github.io/P2PVG-Project-Page/?fbclid=IwAR3WPMFrhg1EqDCoN33dc8G5VgYuU7Zx4bxb-iMY6wiRN5e6MHZ7clKGTdo) | [paper](https://zswang666.github.io/P2PVG-Project-Page/?fbclid=IwAR3WPMFrhg1EqDCoN33dc8G5VgYuU7Zx4bxb-iMY6wiRN5e6MHZ7clKGTdo) | [video](https://drive.google.com/file/d/1AV7E1d4QZg--3yxAYbyA1jOp98qIJUIB/view?usp=sharing)
 
+Tsun-Hsuan Wang*, Yen-Chi Cheng*, Chieh Hubert Lin, Hwann-Tzong Chen, Min Sun (* indicate equal contribution)
+
+International Conference on Computer Vision (ICCV), 2019
+
+This repo is the implementation of our ICCV 2019 paper: "[Point-to-Point Video Generation](https://arxiv.org/abs/1904.02912)". We will provide the PyTorch implementation for our paper very soon.
+
 ![teaser](imgs/teaser.png)
 <!--- (![](imgs/teaser-ret/mnist.gif) ![](imgs/teaser-ret/wm.gif) ![](imgs/teaser-ret/h36m-resize.gif) -->
 
@@ -14,8 +20,6 @@
 **Point-to-Point (P2P) Video Generation.** Given a pair of (orange) start- and (red) end-frames in the video and 3D
 skeleton domains, our method generates videos with smooth transitional frames of various lengths. The superb controllability
 of p2p generation naturally facilitates the modern video editing process.
-
-We will provide our PyTorch implementation for our paper very soon.
 
 Overview
 ---
