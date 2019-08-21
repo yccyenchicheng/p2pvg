@@ -50,9 +50,15 @@ Results
 ### **Loop generation.**
 ![loop](imgs/results/loopgen.png)
 
-Usage
+Usage (Coming Soon!)
 ---
-Acknowledgements: This code borrows heavily from the [SVG](https://github.com/edenton/svg). A huge thanks to them!
+**Requirements**
+
+* OS: Ubuntu 16.04
+* NVIDIA GPU + CUDA
+* Python 3.6
+* PyTorch 1.0
+* TensorFlow (for Tensorboard)
 
 **Prepare dataset**
 
@@ -89,13 +95,17 @@ python train.py --dataset mnist --channels 1 --num_digits 2 --max_seq_len 30 --d
 ```
 or replace `--dataset <other_dataset>`, the corresponding channels `--channels <n_channels>` and other parameters for training.
 
-**P2P generate**
+**P2P Generate**
 
 Given a video and a trained model, perform p2p generation via the following command:
 ```
 python generate.py --ckpt <model.pth> --video <your_video.mp4>
 ```
 and the output will be stored at `gen_outputs`.
+
+**Acknowledgements**
+
+This code borrows heavily from the [SVG](https://github.com/edenton/svg). A huge thanks to them!
 
 Citation
 ---
