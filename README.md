@@ -50,7 +50,7 @@ Results
 ### **Loop generation.**
 ![loop](imgs/results/loopgen.png)
 
-Usage (Coming Soon!)
+Getting Started (Coming Soon!)
 ---
 **Requirements**
 
@@ -87,13 +87,20 @@ Then create a directory `data_root`, and for each of the dataset we used:
     ```
     this will create the directory `data_root/bair/preprocessed_data` and the training data.
 
+Usage (Coming Soon!)
+---
+
 **Training**
 
-For instance, to train with `MNIST`,
+To train with `MNIST`, run
 ```
-python train.py --dataset mnist --channels 1 --num_digits 2 --max_seq_len 30 --delta_len 3 --n_past 1 --weight_cpc 100 --weight_align 0.5 --skip_prob 0.5 --batch_size 100 --backbone dcgan --beta 0.0001 --g_dim 128 --z_dim 10 --rnn_size 256 --gpu 0
+python train.py --dataset mnist --channels 1 --num_digits 2 --max_seq_len 30 --n_past 1 --weight_cpc 100 --weight_align 0.5 --skip_prob 0.5 --batch_size 100 --backbone dcgan --beta 0.0001 --g_dim 128 --z_dim 10 --rnn_size 256
 ```
-or replace `--dataset <other_dataset>`, the corresponding channels `--channels <n_channels>` and other parameters for training.
+and the results, models and `.event` files will stored in `logs/`. To visualize the training, run
+```
+tensorboard --logdir logs
+```
+and go to `127.0.0.1:6006` in your browser to see the visualization. To train with other datasets, replace `--dataset <other_dataset>`, the corresponding channels `--channels <n_channels>` and other parameters of your choices. 
 
 **P2P Generate**
 
