@@ -70,37 +70,39 @@ cd p2pvg
 
 Then create a directory `data_root`, and for each of the dataset we used:
 
-- `MovingMNIST`. The testing sequence is created on the fly. Hence there is no need to preprocess anything for this dataset.
+- `MovingMNIST`. The testing sequence is created on the fly. Hence there is no need to preprocess or prepare anything for this dataset.
 
-- `Weizmann`. We crop each frame based on the bounding box from [here](http://www.wisdom.weizmann.ac.il/~vision/SpaceTimeActions.html). Thus you can download the dataset from the above url or download ours from [here](https://drive.google.com/open?id=1bUr6DR1gJa21VI_6B_CB4-gG2dgI7mfJ). Extract the downloaded `.zip` file and put it under `data_root`.
+- `Weizmann`. We crop each frame based on the bounding box from [this url](http://www.wisdom.weizmann.ac.il/~vision/SpaceTimeActions.html). Thus you can download the dataset from the above url and preprocess yourself. Also, you can download ours from [this link](https://drive.google.com/open?id=1bUr6DR1gJa21VI_6B_CB4-gG2dgI7mfJ). Extract the downloaded `.zip` file and put it under `data_root`.
 
-- `Human 3.6M`.
+- `Human 3.6M`. (Coming soon!)
 
-- `BAIR Robot Pushing`. Download the dataset from [here](https://sites.google.com/view/sna-visual-mpc). Then follows the steps below:
-    1. Create a directory `data_root/bair`, put the downloaded `.tar` file in `data_root/bair` and extract the `.tar` file
+- `BAIR Robot Pushing`. Download the dataset from [this url (~30 gb)](https://sites.google.com/view/sna-visual-mpc). Then follows the steps below:
+    1. Create a directory `data_root/bair`, put the downloaded `.tar` file under `data_root/bair` and extract the `.tar` file
     ```
     tar -xvf data_root/bair/bair_robot_pushing_dataset_v0.tar -C data_root/bair
     ```
-    2. Then use script `data/convert_bair.py` implemented by [here](https://github.com/edenton/svg/blob/master/data/convert_bair.py) to convert the data:
+    2. Then use the script `data/convert_bair.py` implemented in [this repo](https://github.com/edenton/svg/blob/master/data/convert_bair.py) to convert the data:
     ```
     python data/convert_bair.py --data_dir data_root/bair
     ```
-    this will create the directory `data_root/bair/preprocessed_data` and the training data.
+    this will create the directory `data_root/bair/preprocessed_data` and the training data will be stored under it.
 
 Usage (Coming Soon!)
 ---
 
 **Training**
 
-To train with `MNIST`, run
+To train with `Stochastic MovingMNIST`, run
 ```
-python train.py --dataset mnist --channels 1 --num_digits 2 --max_seq_len 30 --n_past 1 --weight_cpc 100 --weight_align 0.5 --skip_prob 0.5 --batch_size 100 --backbone dcgan --beta 0.0001 --g_dim 128 --z_dim 10 --rnn_size 256
+python train.py --dataset mnist --channels 1 --num_digits 2 --max_seq_len 30 --n_past 1 \\
+--weight_cpc 100 --weight_align 0.5 --skip_prob 0.5 --batch_size 100 \\
+--backbone dcgan --beta 0.0001 --g_dim 128 --z_dim 10 --rnn_size 256
 ```
-and the results, models and `.event` files will stored in `logs/`. To visualize the training, run
+and the results, model checkpoints and `.event` files will stored in `logs/`. To visualize the training, run
 ```
 tensorboard --logdir logs
 ```
-and go to `127.0.0.1:6006` in your browser to see the visualization. To train with other datasets, replace `--dataset <other_dataset>`, the corresponding channels `--channels <n_channels>` and other parameters of your choices. 
+and go to `127.0.0.1:6006` in your browser to see the visualization. To train with other datasets, replace `--dataset <other_dataset>`, the corresponding channels `--channels <n_channels>` and other parameters of your choices in the command.
 
 **P2P Generate**
 
