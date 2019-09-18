@@ -112,10 +112,6 @@ python generate.py --ckpt <model.pth> --video <your_video.mp4>
 ```
 and the output will be stored at `gen_outputs`.
 
-**Acknowledgements**
-
-This code borrows heavily from the [SVG](https://github.com/edenton/svg). A huge thanks to them!
-
 Citation
 ---
 ```
@@ -133,3 +129,8 @@ Citation
   year={2019}
 }
 ```
+
+
+Acknowledgments
+---
+This code borrows heavily from the [SVG](https://github.com/edenton/svg). A huge thanks to them!
