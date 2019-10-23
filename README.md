@@ -20,7 +20,7 @@ Paper: [arXiv](https://arxiv.org/abs/1904.02912), [CVF Open Access](https://arxi
 <img src="imgs/teaser-ret/h36m.gif" height="68" width="204">
 </p>
 
-**Point-to-Point (P2P) Video Generation.** Given a pair of (orange) start- and (red) end-frames in the video and 3D
+<!-- **Point-to-Point (P2P) Video Generation.** Given a pair of (orange) start- and (red) end-frames in the video and 3D
 skeleton domains, our method generates videos with smooth transitional frames of various lengths. The superb controllability
 of p2p generation naturally facilitates the modern video editing process.
 
@@ -37,9 +37,8 @@ not only the input frame, but also the “global descriptor” and “time count
 to align the encoder and decoder latent space to reinforce the end-frame consistency. In Panel (b), our skip-frame training
 has a probability to skip the current frame for each timestamp where the inputs will be ignored completely and the hidden
 state will not be propagated at all (indicated by the dashed line). In Panel (c), the control point consistency is achieved by
-posing CPC loss on pψ without deteriorating the reconstruction objective of posterior (highlighted in bold).
+posing CPC loss on pψ without deteriorating the reconstruction objective of posterior (highlighted in bold). -->
 
-Results
 ---
 ### **Generation with various length.**
 ![dylen](imgs/results/dynlen.png)
@@ -50,7 +49,7 @@ Results
 ### **Loop generation.**
 ![loop](imgs/results/loopgen.png)
 
-Getting Started (Coming Soon!)
+Getting Started
 ---
 **Requirements**
 
