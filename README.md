@@ -1,15 +1,5 @@
 # Point-to-Point Video Generation
 
-[paper](https://arxiv.org/abs/1904.02912) | [project page](https://zswang666.github.io/P2PVG-Project-Page) | [video](https://drive.google.com/file/d/1AV7E1d4QZg--3yxAYbyA1jOp98qIJUIB/view?usp=sharing)
-
-[Tsun-Hsuan Wang*](https://zswang666.github.io/), [Yen-Chi Cheng*](https://yccyenchicheng.github.io/), [Chieh Hubert Lin](https://hubert0527.github.io/), [Hwann-Tzong Chen](https://htchen.github.io/), [Min Sun](https://aliensunmin.github.io/) (* indicate equal contribution)
-
-IEEE International Conference on Computer Vision (ICCV), 2019
-
-This repo is the implementation of our ICCV 2019 paper: ["Point-to-Point Video Generation"](https://arxiv.org/abs/1904.02912) in PyTorch.
-
-Paper: [arXiv](https://arxiv.org/abs/1904.02912), [CVF Open Access](https://arxiv.org/abs/1904.02912)
-
 ![teaser](imgs/teaser.png)
 <!--- (![](imgs/teaser-ret/mnist.gif) ![](imgs/teaser-ret/wm.gif) ![](imgs/teaser-ret/h36m-resize.gif) -->
 
@@ -20,12 +10,35 @@ Paper: [arXiv](https://arxiv.org/abs/1904.02912), [CVF Open Access](https://arxi
 <img src="imgs/teaser-ret/h36m.gif" height="68" width="204">
 </p>
 
-<!-- **Point-to-Point (P2P) Video Generation.** Given a pair of (orange) start- and (red) end-frames in the video and 3D
-skeleton domains, our method generates videos with smooth transitional frames of various lengths. The superb controllability
-of p2p generation naturally facilitates the modern video editing process.
+[paper](https://arxiv.org/abs/1904.02912) | [project page](https://zswang666.github.io/P2PVG-Project-Page) | [video](https://drive.google.com/file/d/1AV7E1d4QZg--3yxAYbyA1jOp98qIJUIB/view?usp=sharing)
 
-We will provide our PyTorch implementation for our paper.
+[Tsun-Hsuan Wang*](https://zswang666.github.io/), [Yen-Chi Cheng*](https://yccyenchicheng.github.io/), [Chieh Hubert Lin](https://hubert0527.github.io/), [Hwann-Tzong Chen](https://htchen.github.io/), [Min Sun](https://aliensunmin.github.io/) (* indicate equal contribution)
 
+IEEE International Conference on Computer Vision (ICCV), 2019
+
+This repo is the implementation of our ICCV 2019 paper: ["Point-to-Point Video Generation"](https://arxiv.org/abs/1904.02912) in PyTorch.
+
+Paper: [arXiv](https://arxiv.org/abs/1904.02912), [CVF Open Access](https://arxiv.org/abs/1904.02912)
+
+**Point-to-Point (P2P) Video Generation.** Given a pair of (orange) start- and (red) end-frames in the video and 3D skeleton domains, our method generates videos with smooth transitional frames of various lengths.
+
+Results
+---
+### **Generation with various length.**
+![dylen](imgs/results/dynlen.png)
+
+### **Multiple control points generation.**
+![mulcp](imgs/results/mulcpgen.png)
+
+### **Loop generation.**
+![loop](imgs/results/loopgen.png)
+
+<!-- The superb controllability
+of p2p generation naturally facilitates the modern video editing process. -->
+
+<!-- We will provide our PyTorch implementation for our paper. -->
+
+<!--
 Overview
 ---
 ![Overview](imgs/overview.png)
@@ -38,16 +51,6 @@ to align the encoder and decoder latent space to reinforce the end-frame consist
 has a probability to skip the current frame for each timestamp where the inputs will be ignored completely and the hidden
 state will not be propagated at all (indicated by the dashed line). In Panel (c), the control point consistency is achieved by
 posing CPC loss on pψ without deteriorating the reconstruction objective of posterior (highlighted in bold). -->
-
----
-### **Generation with various length.**
-![dylen](imgs/results/dynlen.png)
-
-### **Multiple control points generation.**
-![mulcp](imgs/results/mulcpgen.png)
-
-### **Loop generation.**
-![loop](imgs/results/loopgen.png)
 
 Getting Started
 ---
