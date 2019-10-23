@@ -77,17 +77,17 @@ Then create a directory `data_root`, and for each of the dataset we used:
 - `Human 3.6M`. First you have to download the dataset from [this url](http://vision.imar.ro/human3.6m/description.php). Then put it under `data_root/processed/`.
 
 - `BAIR Robot Pushing`. Download the dataset from [this url (~30 gb)](https://sites.google.com/view/sna-visual-mpc). Then follows the steps below:
-    1. Create a directory `data_root/bair`, put the downloaded `.tar` file under `data_root/bair` and extract the `.tar` file
+    -  Create a directory `data_root/bair`, put the downloaded `.tar` file under `data_root/bair` and extract the `.tar` file
     ```
     tar -xvf data_root/bair/bair_robot_pushing_dataset_v0.tar -C data_root/bair
     ```
-    2. Then use the script `data/convert_bair.py` implemented in [this repo](https://github.com/edenton/svg/blob/master/data/convert_bair.py) to convert the data:
+    -  Then use the script `data/convert_bair.py` implemented in [this repo](https://github.com/edenton/svg/blob/master/data/convert_bair.py) to convert the data:
     ```
     python data/convert_bair.py --data_dir data_root/bair
     ```
     this will create the directory `data_root/bair/preprocessed_data` and the training data will be stored under it.
 
-Usage (Coming Soon!)
+Usage
 ---
 
 **Training**
