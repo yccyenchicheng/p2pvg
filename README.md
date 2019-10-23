@@ -74,7 +74,7 @@ Then create a directory `data_root`, and for each of the dataset we used:
 
 - `Weizmann`. We crop each frame based on the bounding box from [this url](http://www.wisdom.weizmann.ac.il/~vision/SpaceTimeActions.html). Thus you can download the dataset from the above url and preprocess yourself. Also, you can download ours from [this link](https://drive.google.com/open?id=1bUr6DR1gJa21VI_6B_CB4-gG2dgI7mfJ). Extract the downloaded `.zip` file and put it under `data_root`.
 
-- `Human 3.6M`. (Coming soon!)
+- `Human 3.6M`. First you have to download the dataset from [this url](http://vision.imar.ro/human3.6m/description.php). Then put it under `data_root/processed/`.
 
 - `BAIR Robot Pushing`. Download the dataset from [this url (~30 gb)](https://sites.google.com/view/sna-visual-mpc). Then follows the steps below:
     1. Create a directory `data_root/bair`, put the downloaded `.tar` file under `data_root/bair` and extract the `.tar` file
@@ -133,4 +133,4 @@ Citation
 
 Acknowledgments
 ---
-This code borrows heavily from the [SVG](https://github.com/edenton/svg). A huge thanks to them!
+This code borrows heavily from the [SVG](https://github.com/edenton/svg). And we also adapt the code from [VideoPose3D](https://github.com/facebookresearch/VideoPose3D) for the preprocessing of Human 3.6M. A huge thanks to them!
