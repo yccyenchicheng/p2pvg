@@ -18,7 +18,7 @@ IEEE International Conference on Computer Vision (ICCV), 2019
 
 This repo is the implementation of our ICCV 2019 paper: ["Point-to-Point Video Generation"](https://arxiv.org/abs/1904.02912) in PyTorch.
 
-Paper: [arXiv](https://arxiv.org/abs/1904.02912), [CVF Open Access](https://arxiv.org/abs/1904.02912)
+Paper: [arXiv](https://arxiv.org/abs/1904.02912), [CVF Open Access](http://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Point-to-Point_Video_Generation_ICCV_2019_paper.pdf)
 
 **Point-to-Point (P2P) Video Generation.** Given a pair of (orange) start- and (red) end-frames in the video and 3D skeleton domains, our method generates videos with smooth transitional frames of various lengths.
 
@@ -127,7 +127,8 @@ Citation
 @inproceedings{p2pvg2019,
   title={Point-to-Point Video Generation},
   author={Wang, Tsun-Hsuan and Cheng, Yen-Chi and Hubert Lin, Chieh and Chen, Hwann-Tzong and Sun, Min},
-  booktitle={IEEE International Conference on Computer Vision},
+  booktitle={The IEEE International Conference on Computer Vision (ICCV)},
+  month={October},
   year={2019}
 }
 ```
