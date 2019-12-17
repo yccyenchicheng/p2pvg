@@ -136,4 +136,4 @@ Citation
  
 Acknowledgments
 ---
-This code borrows heavily from the [SVG](https://github.com/edenton/svg). And we also adapt the code from [VideoPose3D](https://github.com/facebookresearch/VideoPose3D) for the preprocessing of Human 3.6M. A huge thanks to them!
+This code borrows heavily from the [SVG](https://github.com/edenton/svg). And we also adapt the code from [VideoPose3D](https://github.com/facebookresearch/VideoPose3D) for the preprocessing of Human 3.6M. A huge thanks to them! :D
